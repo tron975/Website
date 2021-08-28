@@ -1,0 +1,148 @@
+:root {
+    --blue: rgb(76, 145, 246);
+    --light-blue:  rgb(95, 237, 249);
+    --dark-blue: rgb(63, 99, 237);
+}
+
+* {
+    font-family: 'Segoe UI';
+}
+
+body {
+    background-image: url("windows.jpg");
+    background-size:100%;
+    background-repeat: no-repeat;
+
+}
+
+.header {
+    color: white;
+}
+
+.nav-bar {
+    background-color: var(--blue);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 70px;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.nav-options {
+    display: grid !important;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 2em !important;
+    transition: all ease-in-out .2s;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 15px;
+
+}
+
+
+.nav-options:hover {
+    color: white;
+}
+
+#home {
+    color: black;
+    transition: 0.3 ease-in-out;
+}
+
+#home:hover {
+    color: white;
+}
+
+#chess {
+    color: black;
+    transition: 0.3s ease-in-out;
+
+}
+
+#chess:hover {
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #FEFEFE;
+    font-size: 48px;
+    user-select: none;
+}
+
+
+#announce:hover {
+    animation: announce 0.5s linear;
+    cursor: pointer
+}
+
+@keyframes announce {
+    0% {transform: rotate(0deg)}
+    25% {transform: rotate(-10deg)}
+    75% {transform: rotate(5deg)}
+    100% {transform: rotate(0deg)}
+}
+
+.announcement {
+    height: 100px;
+    width: 500px;  
+    background-image: linear-gradient(45deg,  rgba(76, 145, 246, 0.8), rgba(63, 99, 237, 0.8));
+    background-size: 200%;
+    text-align: center;
+    border-radius: 13px;
+    position: absolute;
+    bottom: 5px;
+    left: 37%;
+    color: white;
+    line-height: 100px;
+    font-size: 1.3em;
+    user-select: none;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.close {
+    float: top;
+    position: relative;
+    top: 0;
+    line-height: 30px !important;
+    height: 10px;
+    transition: 0.2s ease-in-out;
+    font-weight: 100;
+
+}
+
+.close:hover {
+    background-color: rgba(247, 49, 49, 0.9);
+    padding: 0px 6px;
+    cursor: pointer;
+}
+
+.announcement:hover {
+    background-position: center;
+}
+
+.announcement a {
+    text-decoration: none;
+    color: rgb(95, 237, 249);
+    transition: text-decoration 0.5s;
+}
+
+
+.announcement a:hover{
+    text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
