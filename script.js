@@ -7,12 +7,12 @@ chess.addEventListener("click", border)
 
 
 function announce() { {
-    announcement.style.visibility = "visible";
+    announcement.style.display = "block";
     announcement.style.animation = "fadeIn 1.5s";
     };
 }
 
-function border() {
+home.onclick = function border() {
     document.style.borderBottom = "5px solid var(--light-blue)";
 
 }
